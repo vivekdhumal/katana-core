@@ -17,14 +17,14 @@ class BuildCommand extends Command
      *
      * @var Filesystem
      */
-    private $filesystem;
+    protected $filesystem;
 
     /**
      * The view factory instance.
      *
      * @var Factory
      */
-    private $viewFactory;
+    protected $viewFactory;
 
     /**
      * BuildCommand constructor.
