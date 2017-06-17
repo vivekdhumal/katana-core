@@ -10,7 +10,7 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\View\FileViewFinder;
 use Illuminate\Events\Dispatcher;
 use Katana\Commands\BuildCommand;
-use Katana\Commands\PostCommand;
+use Katana\Commands\ServeCommand;
 use Illuminate\View\Factory;
 
 class Katana
@@ -73,7 +73,7 @@ class Katana
     {
         $this->application->addCommands([
             new BuildCommand($this->viewFactory, $this->filesystem),
-            new PostCommand($this->viewFactory, $this->filesystem)
+            new ServeCommand()
         ]);
     }
 
