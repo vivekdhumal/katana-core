@@ -73,7 +73,7 @@ class Katana
     {
         $this->application->addCommands([
             new BuildCommand($this->viewFactory, $this->filesystem),
-            new PostCommand($this->viewFactory, $this->filesystem)
+            new ServeCommand()
         ]);
     }
 
